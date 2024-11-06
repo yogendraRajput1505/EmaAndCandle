@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.3.4</version>
+	</parent>
+	<groupId>com.ema.candle</groupId>
+	<artifactId>EmaAndCandle</artifactId>
+	<version>0.1</version>
+	<name>EmaAndCandle</name>
+	<description>Ema and Candle Strategy</description>
+	<properties>
+		<maven-compiler-plugin-systemPath>C:\Users\rdj77\.m2\repository\com\infinan\common\infinan-common\0.1\infinan-common-0.1.jar</maven-compiler-plugin-systemPath>
+		<java.version>17</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j--> 
+		<dependency>
+		    <groupId>com.mysql</groupId>
+		    <artifactId>mysql-connector-j</artifactId>
+		</dependency>
+
+		<dependency>
+		    <groupId>com.zerodhatech.kiteconnect</groupId>
+		    <artifactId>kiteconnect</artifactId>
+		    <version>3.4.0</version>
+		</dependency>		
+		 <dependency>
+		    <groupId>com.example</groupId>
+		    <artifactId>common-library</artifactId>
+		    <version>0.1</version>
+		    <scope>system</scope>
+		    <systemPath>${maven-compiler-plugin-systemPath}</systemPath>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
